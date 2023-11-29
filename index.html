@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Company Name</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#intro">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="intro">
+        <h1>Welcome to Our Company</h1>
+        <p>Introductory content goes here...</p>
+    </section>
+
+    <section id="about">
+        <h2>About Neoteric</h2>
+        <p>Brief introduction about Neoteric...</p>
+
+        <h3>What We Do</h3>
+        <p>Explanation of the services or products offered...</p>
+
+        <h3>Our Partners</h3>
+        <p>Information about key partnerships and collaborations...</p>
+
+        <h3>Our Projects</h3>
+        <p>Overview of major projects, with a special focus on:</p>
+        <h4>Erbil Phase</h4>
+        <p>Details about the Erbil Phase project...</p>
+
+        <h3>Stations</h3>
+        <p>Description of various stations, with images (to be added)...</p>
+
+        <h3>Benefits and Duties</h3>
+        <p>Details on the benefits of working with or using your services/products and the responsibilities involved...</p>
+
+        <h3>Ownership Management</h3>
+        <p>Information on how ownership and management are structured within the company...</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <p>Details about the services you offer...</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>For inquiries, please contact us:</p>
+        <p>Phone: +123 456 7890</p>
+        <p>Email: contact@yourcompany.com</p>
+        <form>
+            <!-- Form content goes here -->
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2023 Neoteric.
+        All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
